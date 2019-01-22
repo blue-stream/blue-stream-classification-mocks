@@ -1,0 +1,20 @@
+{
+    "classification": 3,
+    "classificationsAllow": [
+        {
+            "classificationId": 3,
+            "classificationLayer": 2
+        }
+    ],
+    "ppAllow": [
+        {
+            "ppId": 5,
+            "ppType": "a"
+        },
+        {
+            "ppId": 8,
+            "ppType": "b"
+        }
+    ],
+    "displayName": "היי/מה קורה/אני אובייקט/מספר 2"
+}

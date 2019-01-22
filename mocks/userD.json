@@ -1,0 +1,196 @@
+{
+    "classification": 3,
+    "classificationsAllow": [
+        {
+            "classificationId": 1,
+            "classificationLayer": 2
+        },
+        {
+            "classificationId": 2,
+            "classificationLayer": 4
+        },
+        {
+            "classificationId": 3,
+            "classificationLayer": 0
+        },
+        {
+            "classificationId": 4,
+            "classificationLayer": 1
+        },
+        {
+            "classificationId": 5,
+            "classificationLayer": 2
+        },
+        {
+            "classificationId": 6,
+            "classificationLayer": 3
+        },
+        {
+            "classificationId": 7,
+            "classificationLayer": 1
+        },
+        {
+            "classificationId": 8,
+            "classificationLayer": 1
+        },
+        {
+            "classificationId": 9,
+            "classificationLayer": 0
+        },
+        {
+            "classificationId": 10,
+            "classificationLayer": 1
+        },
+        {
+            "classificationId": 11,
+            "classificationLayer": 1
+        },
+        {
+            "classificationId": 12,
+            "classificationLayer": 2
+        },
+        {
+            "classificationId": 13,
+            "classificationLayer": 1
+        },
+        {
+            "classificationId": 59,
+            "classificationLayer": 3
+        },
+        {
+            "classificationId": 60,
+            "classificationLayer": 1
+        },
+        {
+            "classificationId": 61,
+            "classificationLayer": 1
+        },
+        {
+            "classificationId": 62,
+            "classificationLayer": 3
+        },
+        {
+            "classificationId": 68,
+            "classificationLayer": 1
+        },
+        {
+            "classificationId": 70,
+            "classificationLayer": 2
+        },
+        {
+            "classificationId": 80,
+            "classificationLayer": 4
+        },
+        {
+            "classificationId": 81,
+            "classificationLayer": 1
+        },
+        {
+            "classificationId": 84,
+            "classificationLayer": 3
+        },
+        {
+            "classificationId": 88,
+            "classificationLayer": 1
+        },
+        {
+            "classificationId": 91,
+            "classificationLayer": 0
+        },
+        {
+            "classificationId": 96,
+            "classificationLayer": 1
+        },
+        {
+            "classificationId": 94,
+            "classificationLayer": 2
+        },
+        {
+            "classificationId": 94,
+            "classificationLayer": 1
+        },
+        {
+            "classificationId": 93,
+            "classificationLayer": 3
+        },
+        {
+            "classificationId": 99,
+            "classificationLayer": 3
+        }
+    ],
+    "ppAllow": [
+        {
+            "ppId": 1,
+            "ppType": "b"
+        },
+        {
+            "ppId": 66,
+            "ppType": "b"
+        },
+        {
+            "ppId": 2,
+            "ppType": "b"
+        },
+        {
+            "ppId": 55,
+            "ppType": "a"
+        },
+        {
+            "ppId": 7,
+            "ppType": "b"
+        },
+        {
+            "ppId": 6,
+            "ppType": "a"
+        },
+        {
+            "ppId": 5,
+            "ppType": "b"
+        },
+        {
+            "ppId": 77,
+            "ppType": "a"
+        },
+        {
+            "ppId": 88,
+            "ppType": "a"
+        },
+        {
+            "ppId": 99,
+            "ppType": "b"
+        },
+        {
+            "ppId": 45,
+            "ppType": "b"
+        },
+        {
+            "ppId": 67,
+            "ppType": "b"
+        },
+        {
+            "ppId": 84,
+            "ppType": "a"
+        },
+        {
+            "ppId": 63,
+            "ppType": "a"
+        },
+        {
+            "ppId": 25,
+            "ppType": "a"
+        },
+        {
+            "ppId": 74,
+            "ppType": "b"
+        },
+        {
+            "ppId": 71,
+            "ppType": "a"
+        },
+        {
+            "ppId": 38,
+            "ppType": "b"
+        }
+    ],
+    "displayName": "משפט/קצר"
+}
