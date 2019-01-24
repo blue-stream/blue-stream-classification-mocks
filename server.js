@@ -1,6 +1,6 @@
 const express = require('express');
-const config = require("./config.js");
-const authenticator = require("./authenticator.js");
+const config = require('./config.js');
+const authenticator = require('./authenticator.js');
 
 const userA = require('./mocks/userA.json');
 const userB = require('./mocks/userB.json');
@@ -14,8 +14,8 @@ const app = express();
 const port = config.config.server.port;
 
 if (config.config.authentication.required) {
-    this.app.use(authenticator.Authenticator.initialize());
-    this.app.use(authenticator.Authenticator.middleware);
+    app.use(authenticator.Authenticator.initialize());
+    app.use(authenticator.Authenticator.middleware);
 }
 
 app.get('/classificationservice/api/classifications', (request, response) => {
@@ -56,6 +56,4 @@ app.listen(port, (err) => {
     if (err) {
         return console.log(err);
     }
-
-    console.log(`classification mocks server is listening on ${port}`)
 })
