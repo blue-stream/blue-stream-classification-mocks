@@ -4,7 +4,7 @@ exports.config = {
         name: 'classification',
     },
     authentication: {
-        required: false,
+        required: true,
         secret: process.env.SECRET_KEY || 'bLue5tream@classiFiCaToR.MoCks',
     },
 };
