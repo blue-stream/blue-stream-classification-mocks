@@ -1,16 +1,16 @@
-const express = require('express')
-const config = require("./config.js")
+const express = require('express');
+const config = require("./config.js");
 const authenticator = require("./authenticator.js");
 
-const userA = require('./mocks/userA.json')
-const userB = require('./mocks/userB.json')
-const userC = require('./mocks/userC.json')
-const userD = require('./mocks/userD.json')
-const classifications = require('./mocks/classifications.json')
-const pps = require('./mocks/pps.json')
-const sources = require('./mocks/sources.json')
+const userA = require('./mocks/userA.json');
+const userB = require('./mocks/userB.json');
+const userC = require('./mocks/userC.json');
+const userD = require('./mocks/userD.json');
+const classifications = require('./mocks/classifications.json');
+const pps = require('./mocks/pps.json');
+const sources = require('./mocks/sources.json');
 
-const app = express()
+const app = express();
 const port = config.config.server.port;
 
 if (config.config.authentication.required) {
@@ -54,8 +54,8 @@ app.get('/classificationservice/api/userPermissions', (request, response) => {
 
 app.listen(port, (err) => {
     if (err) {
-        return console.log(err)
+        return console.log(err);
     }
 
-    console.log(`classification server is listening on ${port}`)
+    console.log(`classification mocks server is listening on ${port}`)
 })

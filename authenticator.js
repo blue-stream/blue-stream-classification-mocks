@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const passport = require("passport");
 const passportJwt = require("passport-jwt");
 class Authenticator {
@@ -24,4 +22,3 @@ Authenticator.jwtOptions = {
     secretOrKey: 'bLue5tream@classiFiCaToR',
 };
 exports.Authenticator = Authenticator;
-//# sourceMappingURL=authenticator.js.map

@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 exports.config = {
     server: {
         port: process.env.PORT || 3000,
