@@ -5,6 +5,6 @@ exports.config = {
     },
     authentication: {
         required: false,
-        secret: process.env.SECRET_KEY || 'bLue5tream@2018',
+        secret: process.env.SECRET_KEY || 'bLue5tream@classiFiCaToR.MoCks',
     },
 };
