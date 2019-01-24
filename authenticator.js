@@ -1,5 +1,7 @@
-const passport = require("passport");
-const passportJwt = require("passport-jwt");
+const passport = require('passport');
+const passportJwt = require('passport-jwt');
+const config = require('./config.js');
+
 class Authenticator {
     static initialize(verifyCallback) {
         const strategy = new passportJwt.Strategy(Authenticator.jwtOptions, function (jwtPayload, next) {
@@ -19,6 +21,6 @@ class Authenticator {
 }
 Authenticator.jwtOptions = {
     jwtFromRequest: passportJwt.ExtractJwt.fromAuthHeaderAsBearerToken(),
-    secretOrKey: 'bLue5tream@classiFiCaToR',
+    secretOrKey: config.config.authentication.secret,
 };
 exports.Authenticator = Authenticator;
