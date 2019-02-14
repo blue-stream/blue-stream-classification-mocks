@@ -1,11 +1,8 @@
 const express = require('express');
 const config = require('./config.js');
 const authenticator = require('./authenticator.js');
-
-const userA = require('./mocks/userA.json');
-const userB = require('./mocks/userB.json');
-const userC = require('./mocks/userC.json');
-const userD = require('./mocks/userD.json');
+const fs = require('fs');
+const path = require('path');
 const classifications = require('./mocks/classifications.json');
 const pps = require('./mocks/pps.json');
 const sources = require('./mocks/sources.json');
@@ -32,25 +29,14 @@ app.get('/classificationservice/api/pps', (request, response) => {
 
 app.get('/classificationservice/api/userPermissions', (request, response) => {
     const userName = request.query.userName;
+    const filePath = path.join(__dirname, 'mocks', `${userName}.json`);
 
-    switch (userName) {
-        case 'a@none': {
-            return response.status(200).json(userA);
-        }
-        case 'b@little': {
-            return response.status(200).json(userB);
-        }
-        case 'c@moreThenLittle': {
-            return response.status(200).json(userC);
-        }
-        case 'd@aLot': {
-            return response.status(200).json(userD);
-        }
-        default: {
-            return response.status(200).json(null);
-        }
+    if (fs.existsSync(filePath)) {
+        return response.status(200).json(JSON.parse(fs.readFileSync(filePath, 'utf8')));
     }
-})
+
+    return response.status(200).json(null);
+});
 
 app.listen(port, (err) => {
     if (err) {
