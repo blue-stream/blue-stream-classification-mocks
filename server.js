@@ -29,7 +29,7 @@ app.get('/classificationservice/api/pps', (request, response) => {
 
 app.get('/classificationservice/api/userPermissions', (request, response) => {
     const userName = request.query.userName;
-    const filePath = path.join(__dirname, 'mocks', `${userName}.json`);
+    const filePath = path.join(__dirname, 'users', `${userName}.json`);
 
     if (fs.existsSync(filePath)) {
         return response.status(200).json(JSON.parse(fs.readFileSync(filePath, 'utf8')));
